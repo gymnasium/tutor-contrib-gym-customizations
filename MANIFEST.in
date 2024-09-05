@@ -1,0 +1,2 @@
+recursive-include tutorgym_customizations/patches *
+recursive-include tutorgym_customizations/templates *
