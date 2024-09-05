@@ -1,0 +1,4 @@
+ENABLE_DYNAMIC_REGISTRATION_FIELDS: true
+REGISTRATION_EXTRA_FIELDS: {
+    "market": "required",
+}

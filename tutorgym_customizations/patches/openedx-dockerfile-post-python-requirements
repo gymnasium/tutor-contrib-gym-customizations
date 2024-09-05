@@ -1,1 +1,2 @@
 RUN pip install -e git+https://github.com/amirtds/gym-overrides.git@60fb513c5abf812b39d010adb68ec26257460289#egg=gym_overrides
+RUN pip install -e git+https://github.com/gymnasium/custom_registration_form.git@release/redwood#egg=custom_reg_form
