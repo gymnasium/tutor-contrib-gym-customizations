@@ -1,4 +1,247 @@
-ACCREDIBLE_API_KEY: 7b17cf163ee06372e58d3b2f9271e7b6
+ACCREDIBLE_API_KEY: CHANGEME
 ADDL_INSTALLED_APPS: ["custom_reg_form"]
 ENABLE_COMBINED_LOGIN_REGISTRATION: true
 REGISTRATION_EXTENSION_FORM: "custom_reg_form.forms.ExtraInfoForm"
+REGISTRATION_FIELD_ORDER:
+  [
+    "name",
+    "first_name",
+    "last_name",
+    "username",
+    "email",
+    "confirm_email",
+    "password",
+    "city",
+    "state",
+    "country",
+    "year_of_birth",
+    "level_of_education",
+    "gender",
+    "specialty",
+    "profession",
+    "company",
+    "title",
+    "mailing_address",
+    "goals",
+    "honor_code",
+    "terms_of_service",
+    "market",
+  ]
+EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
+  - add-forum-admin
+  - add-forum-community-TA
+  - add-forum-mod
+  - add-instructor
+  - add-or-remove-user-group
+  - book
+  - delete-student-module-state
+  - dump-answer-dist-csv
+  - dump-graded-assignments-config
+  - dump-grades
+  - dump-grades-csv
+  - dump-grades-csv-raw
+  - dump-grades-raw
+  - edx.bookmark.accessed
+  - edx.bookmark.added
+  - edx.bookmark.listed
+  - edx.bookmark.removed
+  - edx.certificate.created
+  - edx.certificate.shared
+  - edx.certificate.evidence_visited
+  - edx.cohort.created
+  - edx.cohort.creation_requested
+  - edx.cohort.user_add_requested
+  - edx.cohort.user_added
+  - edx.cohort.user_removed
+  - edx.course.enrollment.activated
+  - edx.course.enrollment.deactivated
+  - edx.course.enrollment.mode_changed
+  - edx.course.enrollment.upgrade.clicked
+  - edx.course.enrollment.upgrade.succeeded
+  - edx.course.student_notes.added
+  - edx.course.student_notes.deleted
+  - edx.course.student_notes.edited
+  - edx.course.student_notes.notes_page_viewed
+  - edx.course.student_notes.searched
+  - edx.course.student_notes.used_unit_link
+  - edx.course.student_notes.viewed
+  - edx.course.tool.accessed
+  - edx.done.toggled
+  - edx.drag_and_drop_v2.feedback.closed
+  - edx.drag_and_drop_v2.feedback.opened
+  - edx.drag_and_drop_v2.item.dropped
+  - edx.drag_and_drop_v2.item.picked_up
+  - edx.drag_and_drop_v2.loaded
+  - edx.forum.comment.created
+  - edx.forum.response.created
+  - edx.forum.response.voted
+  - edx.forum.searched
+  - edx.forum.thread.created
+  - edx.forum.thread.viewed
+  - edx.forum.thread.voted
+  - edx.googlecomponent.calendar.displayed
+  - edx.googlecomponent.document.displayed
+  - edx.grades.course.grade_calculated
+  - edx.grades.problem.rescored
+  - edx.grades.problem.score_overridden
+  - edx.grades.problem.state_deleted
+  - edx.grades.problem.submitted
+  - edx.grades.subsection.grade_calculated
+  - edx.instructor.report.downloaded
+  - edx.instructor.report.requested
+  - edx.librarycontentblock.content.assigned
+  - edx.librarycontentblock.content.removed
+  - edx.problem.hint.demandhint_displayed
+  - edx.problem.hint.feedback_displayed
+  - edx.special_exam.practice.allowance.created
+  - edx.special_exam.practice.allowance.deleted
+  - edx.special_exam.practice.attempt.created
+  - edx.special_exam.practice.attempt.deleted
+  - edx.special_exam.practice.attempt.download_software_clicked
+  - edx.special_exam.practice.attempt.error
+  - edx.special_exam.practice.attempt.ready_to_start
+  - edx.special_exam.practice.attempt.ready_to_submit
+  - edx.special_exam.practice.attempt.started
+  - edx.special_exam.practice.attempt.submitted
+  - edx.special_exam.practice.created
+  - edx.special_exam.practice.updated
+  - edx.special_exam.proctored.allowance.created
+  - edx.special_exam.proctored.allowance.deleted
+  - edx.special_exam.proctored.attempt.created
+  - edx.special_exam.proctored.attempt.declined
+  - edx.special_exam.proctored.attempt.deleted
+  - edx.special_exam.proctored.attempt.download_software_clicked
+  - edx.special_exam.proctored.attempt.error
+  - edx.special_exam.proctored.attempt.ready_to_start
+  - edx.special_exam.proctored.attempt.ready_to_submit
+  - edx.special_exam.proctored.attempt.rejected
+  - edx.special_exam.proctored.attempt.review_received
+  - edx.special_exam.proctored.attempt.started
+  - edx.special_exam.proctored.attempt.submitted
+  - edx.special_exam.proctored.attempt.verified
+  - edx.special_exam.proctored.created
+  - edx.special_exam.proctored.option-presented
+  - edx.special_exam.proctored.updated
+  - edx.special_exam.timed.allowance.created
+  - edx.special_exam.timed.allowance.deleted
+  - edx.special_exam.timed.attempt.created
+  - edx.special_exam.timed.attempt.deleted
+  - edx.special_exam.timed.attempt.ready_to_submit
+  - edx.special_exam.timed.attempt.started
+  - edx.special_exam.timed.attempt.submitted
+  - edx.special_exam.timed.created
+  - edx.special_exam.timed.updated
+  - edx.team.activity_updated
+  - edx.team.changed
+  - edx.team.created
+  - edx.team.deleted
+  - edx.team.learner_added
+  - edx.team.learner_removed
+  - edx.team.page_viewed
+  - edx.team.searched
+  - edx.ui.lms.link_clicked
+  - edx.ui.lms.outline.selected
+  - edx.ui.lms.sequence.next_selected
+  - edx.ui.lms.sequence.previous_selected
+  - edx.ui.lms.sequence.tab_selected
+  - edx.video.bumper.dismissed
+  - edx.video.bumper.loaded
+  - edx.video.bumper.played
+  - edx.video.bumper.skipped
+  - edx.video.bumper.stopped
+  - edx.video.bumper.transcript.hidden
+  - edx.video.bumper.transcript.menu.hidden
+  - edx.video.bumper.transcript.menu.shown
+  - edx.video.bumper.transcript.shown
+  - edx.video.closed_captions.hidden
+  - edx.video.closed_captions.shown
+  - edx.video.language_menu.hidden
+  - edx.video.language_menu.shown
+  - edx.video.loaded
+  - edx.video.paused
+  - edx.video.played
+  - edx.video.position.changed
+  - edx.video.stopped
+  - edx.video.transcript.hidden
+  - edx.video.transcript.shown
+  - get-student-progress-page
+  - hide_transcript
+  - list-beta-testers
+  - list-forum-admins
+  - list-forum-community-TAs
+  - list-forum-mods
+  - list-instructors
+  - list-staff
+  - list-students
+  - load_video
+  - microsoft.office.mix.loaded
+  - microsoft.office.mix.paused
+  - microsoft.office.mix.played
+  - microsoft.office.mix.slide.loaded
+  - microsoft.office.mix.stopped
+  - openassessmentblock.create_submission
+  - openassessmentblock.get_peer_submission
+  - openassessmentblock.get_submission_for_staff_grading
+  - openassessmentblock.peer_assess
+  - openassessmentblock.save_submission
+  - openassessmentblock.self_assess
+  - openassessmentblock.staff_assess
+  - openassessmentblock.submit_feedback_on_assessments
+  - openassessment.student_training_assess_example
+  - openassessment.upload_file
+  - oppia.exploration.completed
+  - oppia.exploration.loaded
+  - oppia.exploration.state.changed
+  - page_close
+  - pause_video
+  - play_video
+  - problem_check
+  - problem_check_fail
+  - problem_graded
+  - problem_rescore
+  - problem_rescore_fail
+  - problem_reset
+  - problem_save
+  - problem_show
+  - remove-forum-admin
+  - remove-forum-community-TA
+  - remove-forum-mod
+  - remove-instructor
+  - rescore-all-submissions
+  - rescore-student-submission
+  - reset-all-attempts
+  - reset_problem
+  - reset_problem_fail
+  - reset-student-attempts
+  - save_problem_fail
+  - save_problem_success
+  - seek_video
+  - seq_goto
+  - seq_next
+  - seq_prev
+  - showanswer
+  - show_transcript
+  - speed_change_video
+  - stop_video
+  - textbook.pdf.chapter.navigated
+  - textbook.pdf.display.scaled
+  - textbook.pdf.outline.toggled
+  - textbook.pdf.page.navigated
+  - textbook.pdf.page.scrolled
+  - textbook.pdf.searchcasesensitivity.toggled
+  - textbook.pdf.search.executed
+  - textbook.pdf.search.highlight.toggled
+  - textbook.pdf.search.navigatednext
+  - textbook.pdf.thumbnail.navigated
+  - textbook.pdf.thumbnails.toggled
+  - textbook.pdf.zoom.buttons.changed
+  - textbook.pdf.zoom.menu.changed
+  - ubc.peer_instruction.accessed
+  - ubc.peer_instruction.original_submitted
+  - ubc.peer_instruction.revised_submitted
+  - xblock.poll.submitted
+  - xblock.poll.view_results
+  - xblock.split_test.child_render
+  - xblock.survey.submitted
+  - xblock.survey.view_results
+  - xmodule.partitions.assigned_user_to_partition

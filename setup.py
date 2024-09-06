@@ -28,10 +28,10 @@ ABOUT = load_about()
 setup(
     name="tutor-contrib-gym-customizations",
     version=ABOUT["__version__"],
-    url="https://github.com/amirtds/tutor-contrib-gym-customizations",
+    url="https://github.com/gymnasium/tutor-contrib-gym-customizations",
     project_urls={
-        "Code": "https://github.com/amirtds/tutor-contrib-gym-customizations",
-        "Issue tracker": "https://github.com/amirtds/tutor-contrib-gym-customizations/issues",
+        "Code": "https://github.com/gymnasium/tutor-contrib-gym-customizations",
+        "Issue tracker": "https://github.com/gymnasium/tutor-contrib-gym-customizations/issues",
     },
     license="AGPLv3",
     author="Amir Tadrisi",
