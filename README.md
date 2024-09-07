@@ -4,20 +4,24 @@ This project is a plugin for the Tutor LMS platform that allows for customizatio
 
 ## Reporting Application
 
-in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements)
+in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements#L3)
 
 ```dockerfile
 RUN pip install -e git+https://github.com/gymnasium/gym_reporting@main#egg=gymnasium-reporting
 ```
 
-This line installs the reporting application, To access the reporting app, login as admin user and navigate to the [http://local.edly.io:8000/reporting/download/](http://local.edly.io:8000/reporting/download/)
+This line installs the reporting application, To access the reporting app,
+
+1. Login as an admin user
+1. Navigate to the [http://local.edly.io:8000/reporting/download/](http://local.edly.io:8000/reporting/download/)
+
 You should somthing similar to the following in the browser:
 
 ![Reporting App](./docs/reporting_app.png)
 
 ## Custom Registration Form
 
-in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements)
+in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements#L2)
 
 ```dockerfile
 RUN pip install -e git+https://github.com/gymnasium/custom_registration_form.git@release/redwood#egg=custom_reg_form
@@ -27,22 +31,27 @@ This line installs the custom registration form, To extend the registeration for
 
 ### How to setup
 
-Go to the [http://local.edly.io:8000/admin/site_configuration/](http://local.edly.io:8000/admin/site_configuration/) and select `local.edly.io` and add the following to the site values:
+Go to the [/admin/site_configuration/siteconfiguration/](http://local.edly.io:8000/admin/site_configuration/siteconfiguration/) and select `local.edly.io` and add the following to the site values:
 
 ```json
-   "MFE_CONFIG": {
+{
+    # other configs
+
+    "MFE_CONFIG": {
         "ENABLE_DYNAMIC_REGISTRATION_FIELDS": "true"
     },
     "extended_profile_fields": [
         "market"
     ]
+}
 ```
 
-Repeat the same steps for `local.edly.io:8000`
+Repeat the same steps for the `local.edly.io:8000`
 
-Also check 
+Also check
+
 - `ENABLE_DYNAMIC_REGISTRATION_FIELDS` in [common-env-features](tutorgym_customizations/patches/common-env-features) is set to `true`.
-- `custom_reg_form` is in the `ADDL_INSTALLED_APPS` list in [lms-env](tutorgym_customizations/patches/lms-env) and [cms-env](tutorgym_customizations/patches/cms-env)
+- `custom_reg_form` is in the `ADDL_INSTALLED_APPS` list in [lms-env](tutorgym_customizations/patches/lms-env)
 - `REGISTRATION_EXTENSION_FORM` is set to `custom_reg_form.forms.ExtraInfoForm` in [lms-env](tutorgym_customizations/patches/lms-env)
 - `REGISTRATION_FIELD_ORDER` has the `market` field in the list in [lms-env](tutorgym_customizations/patches/lms-env)
 - `REGISTRATION_EXTRA_FIELDS['market']` is set to `required` in [openedx-common-settings](tutorgym_customizations/patches/openedx-common-settings)
@@ -50,16 +59,16 @@ Also check
 ![Custom Registration Form](./docs/custom_registration_form_1.png)
 ![Custom Registration Form](./docs/custom_registration_form_2.png)
 
-
 ## Gymnasium Patches
 
-in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements)
+in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements#L1)
 
 ```dockerfile
 RUN pip install -e git+https://github.com/amirtds/gym-overrides.git@release/redwood#egg=gym_overrides
 ```
 
 We are injecting patches to:
+
 - Track custom registration form in Segment
 - Make honor and audit passing grades eligible for certificates
 - Make audit mode eligible for certificates
@@ -74,7 +83,7 @@ Take a not of `EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST` values in the [lms-env](
 
 We customized registration tracking to track the market field in the custom registration form. After successful registration, the market field is sent to Segment like the following:
 
-```json
+```
 analytics.identify('6', {
     'email': 'amirtds+test7687@gmail.com',
     'username': 'amirtadrisi',
@@ -99,6 +108,6 @@ This integration replace the default certificate generation with Accredible. The
 
 1. By achieving a passing grade (all course modes) we send a `generate_certificate` signal
 1. The task makes call to the Accredible API to generate the certificate with the grade, course and the user data.
-1. a news `GeneratedCertificate` object is created using the API response data.
+1. a new `GeneratedCertificate` object is created using the API response data.
 
 ![Accredible Certificate](./docs/accredible_certificate.png)
