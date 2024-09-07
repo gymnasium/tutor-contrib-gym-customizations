@@ -111,3 +111,11 @@ This integration replace the default certificate generation with Accredible. The
 1. a new `GeneratedCertificate` object is created using the API response data.
 
 ![Accredible Certificate](./docs/accredible_certificate.png)
+
+## How to Install this plugin
+
+```bash
+pip install -e tutor-contrib-gym-customizations
+tutor plugins enable gym-customizations
+tutor config save && tutor images build openedx|openedx-dev && tutor dev|local lanuch
+```
