@@ -1,1 +1,1 @@
-RUN curl -fsSL https://github.com/amirtds/edx-platform/commit/c5d296e4c25dfdb064d9bcd67e26167c531f4ea7.patch | git am
+RUN curl -fsSL https://github.com/gymnasium/edx-platform/commit/c5d296e4c25dfdb064d9bcd67e26167c531f4ea7.patch | git am

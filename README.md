@@ -64,7 +64,7 @@ Also check
 in [openedx-dockerfile-post-python-requirements](tutorgym_customizations/patches/openedx-dockerfile-post-python-requirements#L1)
 
 ```dockerfile
-RUN pip install -e git+https://github.com/amirtds/gym-overrides.git@release/redwood#egg=gym_overrides
+RUN pip install -e git+https://github.com/gymnasium/gym-overrides.git@release/redwood#egg=gym_overrides
 ```
 
 We are injecting patches to:
