@@ -1,0 +1,2 @@
+# via gym-customizations mfe-lms-development-settings
+MFE_CONFIG["ENABLE_DYNAMIC_REGISTRATION_FIELDS"] = True
