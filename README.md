@@ -35,8 +35,6 @@ Go to the [/admin/site_configuration/siteconfiguration/](http://local.edly.io:80
 
 ```json
 {
-    # other configs
-
     "MFE_CONFIG": {
         "ENABLE_DYNAMIC_REGISTRATION_FIELDS": "true"
     },
@@ -79,7 +77,7 @@ In the following section we will go over necessary configuration to make the abo
 ### Segment Configuration
 
 In order for the Segment configuration to work, we need to make sure that the `LMS_SEGMENT_KEY` is set in [openedx-lms-common-settings](tutorgym_customizations/patches/openedx-lms-common-settings) and `CMS_SEGMENT_KEY` is set in [openedx-cms-common-settings](tutorgym_customizations/patches/openedx-cms-common-settings).
-Take a not of `EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST` values in the [lms-env](tutorgym_customizations/patches/lms-env) to check which events are being tracked in Segment.
+Take a note of `EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST` values in the [lms-env](tutorgym_customizations/patches/lms-env) to check which events are being tracked in Segment.
 
 We customized registration tracking to track the market field in the custom registration form. After successful registration, the market field is sent to Segment like the following:
 
@@ -104,7 +102,7 @@ analytics.identify('6', {
 ### Accredible Configuration
 
 In order for the Accredible configuration to work, we need to make sure that the `ACCREDIBLE_API_KEY` is set in [lms-env](tutorgym_customizations/patches/lms-env).
-This integration replace the default certificate generation with Accredible. The workflow is the following:
+This integration replaces the default certificate generation with Accredible. The workflow is the following:
 
 1. By achieving a passing grade (all course modes) we send a `generate_certificate` signal
 1. The task makes call to the Accredible API to generate the certificate with the grade, course and the user data.
@@ -117,5 +115,5 @@ This integration replace the default certificate generation with Accredible. The
 ```bash
 pip install -e tutor-contrib-gym-customizations
 tutor plugins enable gym-customizations
-tutor config save && tutor images build openedx|openedx-dev && tutor dev|local lanuch
+tutor config save && tutor images build openedx|openedx-dev && tutor dev|local launch
 ```
