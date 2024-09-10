@@ -1,1 +1,2 @@
+# via gym-customizations common-env-features
 ENABLE_DYNAMIC_REGISTRATION_FIELDS: true

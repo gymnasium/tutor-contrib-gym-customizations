@@ -1,1 +1,2 @@
-LMS_SEGMENT_KEY = "CHANGEME"
+# via gym-customizations openedx-lms-common-settings
+LMS_SEGMENT_KEY = "{{ SEGMENT_API_KEY }}"

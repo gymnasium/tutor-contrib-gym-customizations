@@ -1,1 +1,2 @@
-CMS_SEGMENT_KEY = "CHANGEME"
+# via gym-customizations openedx-cms-common-settings
+CMS_SEGMENT_KEY = "{{ SEGMENT_API_KEY }}"

@@ -1,4 +1,5 @@
-ACCREDIBLE_API_KEY: CHANGEME
+# via gym-customizations lms-env
+ACCREDIBLE_API_KEY: "{{ ACCREDIBLE_API_KEY }}"
 ADDL_INSTALLED_APPS: ["custom_reg_form"]
 ENABLE_COMBINED_LOGIN_REGISTRATION: true
 REGISTRATION_EXTENSION_FORM: "custom_reg_form.forms.ExtraInfoForm"

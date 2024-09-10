@@ -1,3 +1,4 @@
+# via gym-customizations cms-env
 ENABLE_COMBINED_LOGIN_REGISTRATION: true
 EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   - add-forum-admin

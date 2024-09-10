@@ -1,1 +1,2 @@
+# via gym-customizations openedx-common-settings
 REGISTRATION_EXTRA_FIELDS['market'] = 'required'
