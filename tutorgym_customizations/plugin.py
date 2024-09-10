@@ -33,8 +33,7 @@ hooks.Filters.CONFIG_UNIQUE.add_items(
         # Each new setting is a pair: (setting_name, unique_generated_value).
         # Prefix your setting names with 'GYM_CUSTOMIZATIONS_'.
         # For example:
-        # ("ACCREDIBLE_API_KEY", accredible_api_key),
-        # ("SEGMENT_API_KEY", segment_api_key),
+        ### ("GYM_CUSTOMIZATIONS_SECRET_KEY", "{{ 24|random_string }}"),
         ("ACCREDIBLE_API_KEY", os.getenv("ACCREDIBLE_API_KEY")),
         ("SEGMENT_API_KEY", os.getenv("SEGMENT_API_KEY")),
     ]

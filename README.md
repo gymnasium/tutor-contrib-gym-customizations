@@ -117,3 +117,9 @@ pip install -e tutor-contrib-gym-customizations
 tutor plugins enable gym-customizations
 tutor config save && tutor images build openedx|openedx-dev && tutor dev|local launch
 ```
+
+**Note:** This plugin requires a `.env` file in your tutor root populated with (at least) the following values:
+```
+ACCREDIBLE_API_KEY=example-accredible-api-key
+SEGMENT_API_KEY=example-segment-api-key
+```
