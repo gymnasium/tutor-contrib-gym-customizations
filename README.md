@@ -35,10 +35,8 @@ Go to the [/admin/site_configuration/siteconfiguration/](http://local.edly.io:80
 
 ```json
 {
-    "MFE_CONFIG": {
-        "ENABLE_DYNAMIC_REGISTRATION_FIELDS": "true"
-    },
     "extended_profile_fields": [
+        "confirm_email",
         "market"
     ]
 }
