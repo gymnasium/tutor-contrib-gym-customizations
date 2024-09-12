@@ -1,2 +1,2 @@
 # via gym-customizations openedx-dockerfile-post-git-checkout
-RUN curl -fsSL https://github.com/gymnasium/edx-platform/commit/c5d296e4c25dfdb064d9bcd67e26167c531f4ea7.patch | git am
+RUN curl -fsSL https://github.com/gymnasium/edx-platform/commit/8bcafdbbfb67f62bbefb97178f9f20c01ac1a635.patch | git am
