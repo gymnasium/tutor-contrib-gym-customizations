@@ -1,4 +1,5 @@
 # via gym-customizations openedx-common-settings
+ENABLE_DYNAMIC_REGISTRATION_FIELDS = True
 REGISTRATION_EXTRA_FIELDS = {
   'confirm_email': 'required',
   'level_of_education': 'hidden',

@@ -2,32 +2,31 @@
 ACCREDIBLE_API_KEY: "{{ ACCREDIBLE_API_KEY }}"
 ADDL_INSTALLED_APPS: ["custom_reg_form"]
 ENABLE_COMBINED_LOGIN_REGISTRATION: true
+ENABLE_DYNAMIC_REGISTRATION_FIELDS: true
 REGISTRATION_EXTENSION_FORM: "custom_reg_form.forms.ExtraInfoForm"
 REGISTRATION_FIELD_ORDER:
-  [
-    "name",
-    "first_name",
-    "last_name",
-    "username",
-    "email",
-    "confirm_email",
-    "password",
-    "city",
-    "state",
-    "country",
-    "year_of_birth",
-    "level_of_education",
-    "gender",
-    "specialty",
-    "profession",
-    "company",
-    "title",
-    "mailing_address",
-    "goals",
-    "honor_code",
-    "terms_of_service",
-    "market",
-  ]
+  - name
+  - first_name
+  - last_name
+  - username
+  - email
+  - confirm_email
+  - password
+  - city
+  - state
+  - country
+  - year_of_birth
+  - level_of_education
+  - gender
+  - specialty
+  - profession
+  - company
+  - title
+  - mailing_address
+  - goals
+  - honor_code
+  - terms_of_service
+  - market
 EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   - add-forum-admin
   - add-forum-community-TA

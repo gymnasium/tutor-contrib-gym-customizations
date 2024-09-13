@@ -38,7 +38,7 @@ Go to the [/admin/site_configuration/siteconfiguration/](http://local.edly.io:80
     "extended_profile_fields": [
         "confirm_email",
         "market"
-    ]
+    ],
 }
 ```
 
