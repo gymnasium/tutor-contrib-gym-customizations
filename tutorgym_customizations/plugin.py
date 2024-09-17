@@ -36,6 +36,7 @@ hooks.Filters.CONFIG_UNIQUE.add_items(
         ### ("GYM_CUSTOMIZATIONS_SECRET_KEY", "{{ 24|random_string }}"),
         ("ACCREDIBLE_API_KEY", os.getenv("ACCREDIBLE_API_KEY")),
         ("SEGMENT_API_KEY", os.getenv("SEGMENT_API_KEY")),
+        ("SEGMENT_KEY", os.getenv("SEGMENT_API_KEY")),
     ]
 )
 
