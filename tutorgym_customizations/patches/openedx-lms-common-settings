@@ -1,2 +1,4 @@
 # via gym-customizations openedx-lms-common-settings
 LMS_SEGMENT_KEY = "{{ SEGMENT_API_KEY }}"
+INSTALLED_APPS.remove('lms.djangoapps.static_template_view')
+MKTG_URL_LINK_MAP = {}
