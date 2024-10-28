@@ -1,0 +1,2 @@
+# via gym-customizations mfe-lms-development-settings
+MFE_CONFIG["SEGMENT_KEY"] = '{{ SEGMENT_API_KEY }}'
