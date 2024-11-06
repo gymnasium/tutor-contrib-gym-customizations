@@ -106,6 +106,9 @@ This integration replaces the default certificate generation with Accredible. Th
 1. The task makes call to the Accredible API to generate the certificate with the grade, course and the user data.
 1. a new `GeneratedCertificate` object is created using the API response data.
 
+To have the certificate generation working, we need to enable **certificate generation configuration** at `/admin/certificates/certificategenerationconfiguration` and also activate `certificates.auto_certificate_generation` waffle switch at `/admin/waffle/switch/`
+
+
 ![Accredible Certificate](./docs/accredible_certificate.png)
 
 ## How to Install this plugin
