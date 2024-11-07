@@ -1,5 +1,6 @@
 # via gym-customizations openedx-common-settings
 ENABLE_DYNAMIC_REGISTRATION_FIELDS = True
+GOOGLE_ANALYTICS_4_ID = "{{ GOOGLE_ANALYTICS_4_ID }}"
 REGISTRATION_EXTRA_FIELDS = {
   'confirm_email': 'required',
   'level_of_education': 'hidden',

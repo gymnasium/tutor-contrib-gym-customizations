@@ -123,6 +123,7 @@ tutor config save && tutor images build openedx|openedx-dev && tutor dev|local l
 ```
 ACCREDIBLE_API_KEY=example-accredible-api-key
 SEGMENT_API_KEY=example-segment-api-key
+GOOGLE_ANALYTICS_4_ID=example-google-analytics-4-id
 ```
 
 **Important caveat:** if these key values ever need to be changed/replaced, make sure you update them in both the `config.yml` and `.env` files before running `tutor config save`. Once they are set in the config file, it appears tutor bypasses the env files.
