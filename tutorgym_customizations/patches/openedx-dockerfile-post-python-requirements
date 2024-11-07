@@ -1,4 +1,4 @@
 # via gym-customizations openedx-dockerfile-post-python-requirements
-RUN pip install -e git+https://github.com/gymnasium/gym-overrides.git@release/redwood#egg=gym_overrides
-RUN pip install -e git+https://github.com/gymnasium/custom_registration_form.git@release/redwood#egg=custom_reg_form
-RUN pip install -e git+https://github.com/gymnasium/gym_reporting@main#egg=gymnasium-reporting
+RUN pip install -e git+https://github.com/gymnasium/gym-overrides.git@af89c393013ac88f9df34f24d3c165f98dee51d1
+RUN pip install -e git+https://github.com/gymnasium/custom_registration_form.git@release/redwood
+RUN pip install -e git+https://github.com/gymnasium/gym_reporting@main
