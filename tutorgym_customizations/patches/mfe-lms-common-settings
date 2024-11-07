@@ -1,3 +1,4 @@
 # via gym-customizations mfe-lms-development-settings
 MFE_CONFIG["SEGMENT_KEY"] = '{{ SEGMENT_API_KEY }}'
 MFE_CONFIG["GOOGLE_ANALYTICS_4_ID"] = "{{ GOOGLE_ANALYTICS_4_ID }}"
+MFE_CONFIG["ACCREDIBLE_API_KEY"] = '{{ ACCREDIBLE_API_KEY }}'
