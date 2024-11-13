@@ -34,10 +34,6 @@ hooks.Filters.CONFIG_UNIQUE.add_items(
         # Prefix your setting names with 'GYM_CUSTOMIZATIONS_'.
         # For example:
         ### ("GYM_CUSTOMIZATIONS_SECRET_KEY", "{{ 24|random_string }}"),
-        ("ACCREDIBLE_API_KEY", os.getenv("ACCREDIBLE_API_KEY")),
-        ("GOOGLE_ANALYTICS_4_ID", os.getenv("GOOGLE_ANALYTICS_4_ID")),
-        ("SEGMENT_API_KEY", os.getenv("SEGMENT_API_KEY")),
-        ("SEGMENT_KEY", os.getenv("SEGMENT_API_KEY")),
     ]
 )
 
@@ -47,6 +43,10 @@ hooks.Filters.CONFIG_OVERRIDES.add_items(
         # Add values to override settings from Tutor core or other plugins here.
         # Each override is a pair: (setting_name, new_value). For example:
         ### ("PLATFORM_NAME", "My platform"),
+        ("ACCREDIBLE_API_KEY", os.getenv("ACCREDIBLE_API_KEY")),
+        ("SEGMENT_API_KEY", os.getenv("SEGMENT_API_KEY")),
+        ("SEGMENT_KEY", os.getenv("SEGMENT_API_KEY")),
+        ("GOOGLE_ANALYTICS_4_ID", os.getenv("GOOGLE_ANALYTICS_4_ID")),
     ]
 )
 
