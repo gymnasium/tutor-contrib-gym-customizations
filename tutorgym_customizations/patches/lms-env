@@ -177,7 +177,7 @@ EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   # - edx.video.stopped
   # - edx.video.transcript.hidden
   # - edx.video.transcript.shown
-  - hide_transcript
+  # - hide_transcript
   # - list-beta-testers
   # - list-forum-admins
   # - list-forum-community-TAs
