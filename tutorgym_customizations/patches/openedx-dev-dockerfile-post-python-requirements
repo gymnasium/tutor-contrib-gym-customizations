@@ -1,0 +1,5 @@
+# via gym-customizations openedx-dev-dockerfile-post-python-requirements
+RUN pip install git+https://github.com/gymnasium/gym-overrides.git@6cc87881ecb937ce0ce24ddd277ffdbb9d3a7b80
+# RUN pip install git+https://github.com/gymnasium/custom_registration_form.git@release/redwood
+RUN pip install git+https://github.com/gymnasium/custom_registration_form.git@feat/market-update
+RUN pip install git+https://github.com/gymnasium/gym_reporting@fix/market-type-error
