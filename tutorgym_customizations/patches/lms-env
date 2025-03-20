@@ -197,7 +197,7 @@ EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   # - openassessment.student_training_assess_example
   # - openassessment.upload_file
   # - openassessment.upload_file_error
-  - page_close
+  # - page_close
   # - pause_video
   # - play_video
   # - problem_check
