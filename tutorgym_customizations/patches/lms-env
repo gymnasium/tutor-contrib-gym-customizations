@@ -64,7 +64,7 @@ EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   # - edx.course.student_notes.searched
   # - edx.course.student_notes.used_unit_link
   # - edx.course.student_notes.viewed
-  - edx.course.tool.accessed
+  # - edx.course.tool.accessed
   - edx.done.toggled
   # - edx.drag_and_drop_v2.feedback.closed
   # - edx.drag_and_drop_v2.feedback.opened
@@ -216,9 +216,9 @@ EVENT_TRACKING_SEGMENTIO_EMIT_WHITELIST:
   # - save_problem_fail
   # - save_problem_success
   # - seek_video
-  - seq_goto
-  - seq_next
-  - seq_prev
+  # - seq_goto
+  # - seq_next
+  # - seq_prev
   # - showanswer
   # - show_transcript
   # - speed_change_video
