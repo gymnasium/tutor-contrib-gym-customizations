@@ -1,2 +1,2 @@
 # via gym-customizations openedx-cms-common-settings
-CMS_SEGMENT_KEY = "{{ SEGMENT_API_KEY }}"
+# CMS_SEGMENT_KEY = "{{ SEGMENT_API_KEY }}"
